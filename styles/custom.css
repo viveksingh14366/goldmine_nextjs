@@ -1,0 +1,517 @@
+@font-face {
+	font-family: 'ABC Favorit';
+	font-style: normal;
+	font-weight: 400, 500;
+	src: url("/fonts/ABCFavorit-Regular.otf") format('otf');
+	src: url("/fonts/ABCFavorit-Medium.otf") format('otf');
+}
+
+@font-face {
+	font-family: 'Ogg';
+	font-style: normal;
+	font-weight: 500, 700;
+	src: url("/fonts/Ogg-Medium.otf") format('otf');
+	src: url("/fonts/OggBold.ttf") format('ttf');
+}
+
+:root {
+	--gm-white: #fff;
+	--gm-textabcfavorit: ABC Favorit, sans-serif;
+	--gm-titleogg: Ogg, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*,
+body {
+	font-family: var(--gm-textabcfavorit);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: var(--gm-titleogg);
+	font-weight: 500;
+}
+
+/* Navbar CSS Start */
+
+nav.navbar.navbar-fixed {
+	position: fixed;
+	top: 2rem;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	background-color: transparent;
+	transition: top 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+nav.navbar.navbar-fixed.navbar-sticky {
+	top: 0;
+	transition: top 0.5s, background-color 0.5s ease-in-out;
+	background-image: linear-gradient(120deg, #ff3b64, #ffee72);
+	box-shadow: 0px 5px 30px rgb(0 0 0 / 20%);
+}
+
+#navbarSupportedContent {
+	width: 100%;
+	justify-content: flex-end;
+}
+
+nav.navbar .nav-link {
+	color: var(--gm-white);
+}
+
+.navbar-nav .nav-item .nav-link {
+	padding: 8px 15px;
+}
+
+/* Navbar CSS End */
+.homepgsilder {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: linear-gradient(120deg, #ff3b64, #ffee72);
+}
+
+.hp-slider h2 {
+	text-align: center;
+	font-size: 200px;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.circletext {
+	position: absolute;
+	bottom: -15%;
+	right: 10%;
+}
+
+img.circletext-img {
+	animation: animName 10s linear infinite;
+}
+
+@keyframes animName {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* BOB Section Css Strat */
+
+.bobsection {
+    padding: 3em 0;
+    background: #e1e1e1 url("/img/bob_binary.jpg") no-repeat center / cover;
+}
+
+/* BOB Section Css End */
+
+/* Footer CSS Start */
+
+.img_address_cont {
+	padding: 5rem 0 0 5rem;
+	position: relative;
+}
+
+img.city-img {
+	position: absolute;
+	top: 3px;
+	left: -2px;
+}
+
+.head_text {
+	color: #fff;
+	font-size: 4em;
+	position: relative;
+	letter-spacing: 2px;
+	line-height: 4.0275rem;
+}
+
+.body_text_black {
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	color: #383838;
+	padding-top: 1rem;
+	font-family: var(--gm-textabcfavorit);
+	line-height: 1.8;
+}
+
+.mumbai_address_container:after {
+	content: '';
+	width: 2px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: -5px;
+}
+
+.delhi_address_container img.city-img {
+	top: 33px;
+	left: 20px;
+}
+
+.newsletter_container {
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.newsletter_text_box_container {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	border: 0.5px solid #fff;
+	border-radius: 20px;
+}
+
+.newsletter_email_container {
+	padding: 0.6rem 2.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 0.5px solid #fff;
+}
+
+input.newsletter_text_box {
+	width: 90%;
+	background: transparent;
+	border: none;
+	font-size: 1rem;
+	outline: 0;
+}
+
+input.newsletter_text_box::placeholder {
+	color: #ffc3b0;
+	letter-spacing: 1px;
+}
+
+input.newsletter_submit_btn {
+	font-size: 20px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+}
+
+.margin_icon {
+	width: 2px;
+	height: 1.2rem;
+	color: #fff;
+	background: #fff;
+}
+
+.logo_company {
+	padding: 2.5rem 1rem 3rem;
+	text-align: center;
+}
+
+.head_of_text_blac_02 {
+	font-size: 1.8rem;
+	letter-spacing: 1px;
+	line-height: 1.5042rem;
+	color: #444444;
+	font-family: AGaramondPro;
+	text-transform: capitalize;
+}
+
+.social_media_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+}
+
+.icon_contaier {
+	width: 30%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.header_text_black {
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #322a13;
+}
+
+.body_text_black_03 {
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #444444;
+	margin-bottom: 0;
+}
+
+a.company_logo {
+	font-size: 2.5rem;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+	font-family: sans-serif;
+}
+
+.container_for_privacy_policy {
+	padding: 1rem 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+label.body_text_white {
+	font-size: 0.8rem;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	color: #fff;
+	margin-left: 0.5rem;
+}
+
+.icon_contaier i {
+	color: #fff;
+}
+
+.logo_goldmine {
+	width: 270px;
+	height: 45px;
+}
+
+.gm_copy {
+	margin-top: 2rem;
+}
+
+/* Footer CSS End */
+
+/* Media Query */
+
+/* Laptop Css */
+@media only screen and (max-width: 1660px) {}
+
+/* Tablet Landscape  */
+@media only screen and (max-width: 1200px) {
+
+	/* Slider css */
+	.hp-slider h2 {
+		font-size: 100px;
+	}
+
+	img.circletext-img {
+		width: 75%;
+		height: 100%;
+	}
+
+	.circletext {
+		bottom: -8%;
+		right: 0%;
+	}
+
+	/* Footer Css */
+	img.city-img {
+		width: 100px;
+		height: 100px;
+		top: 4px;
+		left: 0px;
+	}
+
+	.head_text {
+		font-size: 3em;
+	}
+
+	.delhi_address_container img.city-img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.img_address_cont {
+		padding: 3.5rem 0 0 4rem;
+	}
+
+	.body_text_black {
+		font-size: 12px;
+		padding-top: 0;
+	}
+
+	.newsletter_container,
+	.social_media_container {
+		margin-top: 2rem;
+	}
+
+	.newsletter_email_container {
+		padding: 0.4rem 2.5rem;
+	}
+
+	.container_for_privacy_policy {
+		padding: 0.8rem 2rem;
+	}
+
+}
+
+/* Tablet Portrait  */
+@media only screen and (max-width: 768px) {
+
+	/* Header Css */
+	nav.navbar.navbar-fixed.navbarfixed-top {
+		top: 0;
+		transition: top 0.5s, background-color 0.5s ease-in-out;
+		background-image: linear-gradient(120deg, #ff3b64, #ffee72);
+		box-shadow: 0px 5px 30px rgb(0 0 0 / 20%);
+	}
+
+	.navbar-toggler,
+	.navbar-toggler:focus {
+		border: 0;
+		outline: 0;
+		box-shadow: unset
+	}
+
+	nav.navbar.navbar-fixed .fa-xmark,
+	nav.navbar.navbar-fixed.navbarfixed-top .fa-bars {
+		display: none;
+		transition: all 0.3s ease
+	}
+
+	nav.navbar.navbar-fixed.navbarfixed-top .fa-xmark {
+		display: block;
+		transition: all 0.3s ease
+	}
+
+	nav.navbar.navbar-fixed .fa-solid {
+		font-size: 30px;
+		color: #fff;
+	}
+
+	ul.navbar-nav {
+		padding-top: 1.5rem;
+	}
+
+	ul.navbar-nav li.nav-item {
+		border-bottom: 1px dashed #ffe97196;
+	}
+
+	ul.navbar-nav li.nav-item:last-child {
+		border: 0;
+	}
+
+	.navbar-nav .nav-item .nav-link {
+		padding: 10px 15px;
+	}
+	img.goldmine-logo:focus-visible{
+		outline: 0;
+	}
+
+	/* Slider Css */
+	.circletext {
+		bottom: -6%;
+		right: 0%;
+	}
+
+	/* Footer Css */
+	.body_text_black {
+		font-size: 11px;
+	}
+	.mumbai_address_container:after{
+		right: -20px;
+	}
+}
+
+/* Mobile Css */
+@media only screen and (max-width: 767px) {
+	.hp-slider h2 {
+		font-size: 60px;
+	}
+	img.circletext-img {
+		width: 50%;
+		height: 100%;
+	}
+	.circletext {
+		bottom: -5%;
+		right: 6%;
+		text-align: right;
+	}
+
+	/* Footer Css */
+	#footersection {
+		height: 100%;
+	}
+
+	.logo_company {
+		padding: 2.5rem 0 0.5rem;
+	}
+
+	.logo_goldmine {
+		width: 50%;
+		height: 100%;
+	}
+
+	.head_text {
+		font-size: 2.5em;
+		line-height: 1
+	}
+
+	.mumbai_address_container:after {
+		content: '';
+		width: 100%;
+		height: 2px;
+		top: unset;
+		left: 0;
+		bottom: -25px;
+	}
+
+	img.city-img {
+		width: 70px;
+		height: 70px;
+		top: 20px;
+		left: 20px;
+	}
+
+	.delhi_address_container img.city-img {
+		width: 60px;
+		height: 60px;
+		top: 30px;
+		left: 26px;
+	}
+
+	.head_of_text_blac_02 {
+		font-size: calc(1rem + .3vw);
+	}
+
+	.newsletter_text_box_container {
+		width: 85%;
+		margin: 1.5rem auto;
+	}
+
+	.newsletter_email_container {
+		padding: 0.4rem 1.5rem;
+	}
+
+	.container_for_privacy_policy {
+		padding: 0.8rem 1rem;
+	}
+
+	label.body_text_white {
+		font-size: 9px;
+	}
+
+	.icon_contaier {
+		width: 80%;
+	}
+
+	.gm_copy {
+		margin: 1rem 0;
+		font-size: 10px;
+	}
+}
