@@ -28,6 +28,9 @@ export default function Home() {
       <Script 
       src="https://kit.fontawesome.com/0aee105806.js" 
       crossOrigin="anonymous" />
+      <Script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js" 
+      crossOrigin="anonymous" />
       <Script
         type="text/javascript"
         src={'slick/slick.min.js'} />

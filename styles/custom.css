@@ -92,11 +92,11 @@ nav.navbar .nav-link {
 
 .circletext {
 	position: absolute;
-	bottom: -15%;
+	bottom: -13%;
 	right: 10%;
 }
 
-img.circletext-img {
+/* img.circletext-img {
 	animation: animName 10s linear infinite;
 }
 
@@ -108,13 +108,92 @@ img.circletext-img {
 	100% {
 		transform: rotate(360deg);
 	}
+} */
+
+img.circletext-img {
+	animation-name: animName;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
 }
 
+@keyframes animName {
+	0% {
+		transform: rotate(360deg)
+	}
+}
 /* BOB Section Css Strat */
 
 .bobsection {
-    padding: 3em 0;
-    background: #e1e1e1 url("/img/bob_binary.jpg") no-repeat center / cover;
+	background: #e1e1e1 url(/img/bob_binary.jpg) no-repeat center / cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.bob_head_section {
+	display: flex;
+	align-items: center;
+}
+
+.bob-ceter-content {
+	margin: 8rem 0 10rem;
+}
+
+h2.bobtitle {
+	color: #f3395d;
+	margin-bottom: 0;
+	border: 2px solid;
+	border-radius: 30px;
+	padding: 5px 20px;
+}
+
+.bob_subtitle {
+	color: #666666;
+	font-size: 20px;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+/* .bob_textsection {
+	height: 100%;
+	display: flex;
+	align-items: center;
+} */
+
+h2.bob_text_title {
+	color: #f3395d;
+	font-size: 3rem;
+	line-height: 1.4;
+	margin-top: 3rem;
+	margin-bottom: 0;
+	width: 85%;
+}
+
+.bob_videosection img.bob-video {
+	width: 90%;
+	height: 100%;
+}
+
+.bob_bottom_section {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	bottom: 0;
+}
+
+img.bob_girle {
+	width: 60%;
+	height: 100%;
+}
+
+img.pehchaan_con {
+	width: 34%;
+	height: 100%;
+	margin-left: -6rem;
+	padding-bottom: 3rem;
 }
 
 /* BOB Section Css End */
@@ -409,7 +488,8 @@ label.body_text_white {
 	.navbar-nav .nav-item .nav-link {
 		padding: 10px 15px;
 	}
-	img.goldmine-logo:focus-visible{
+
+	img.goldmine-logo:focus-visible {
 		outline: 0;
 	}
 
@@ -423,7 +503,8 @@ label.body_text_white {
 	.body_text_black {
 		font-size: 11px;
 	}
-	.mumbai_address_container:after{
+
+	.mumbai_address_container:after {
 		right: -20px;
 	}
 }
@@ -433,10 +514,12 @@ label.body_text_white {
 	.hp-slider h2 {
 		font-size: 60px;
 	}
+
 	img.circletext-img {
 		width: 50%;
 		height: 100%;
 	}
+
 	.circletext {
 		bottom: -5%;
 		right: 6%;

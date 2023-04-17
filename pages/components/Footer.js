@@ -57,7 +57,7 @@ const Footer = () => {
                                     </div>
                                     <div className="container_for_privacy_policy">
                                         <input className='checkbox_policy' type="checkbox" name="" id="" />
-                                        <label class="body_text_white" htmlFor="">I agree to the privacy policy and terms of use</label>
+                                        <label className="body_text_white" htmlFor="">I agree to the privacy policy and terms of use</label>
                                     </div>
                                 </div>
 
