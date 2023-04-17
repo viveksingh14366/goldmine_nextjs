@@ -124,8 +124,9 @@ img.circletext-img {
 /* BOB Section Css Strat */
 
 .bobsection {
+	padding: 8rem 0;
 	background: #e1e1e1 url(/img/bob_binary.jpg) no-repeat center / cover;
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
